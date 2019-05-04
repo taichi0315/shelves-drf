@@ -1,12 +1,12 @@
 {
-  "type": "service_account",
-  "project_id": "shelves-drf",
-  "private_key_id": "05b2b0f60c55034679ad2311ccc7253ee61f7899",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCvyNPNsioe+7Lb\n6gQEtEiPN/xujETlzbWCvnNih7a1WvexXGQq1PfWvqC35lcV6tBx+vAE/CMhhoV4\nRHZS6irEfkl5sm1j24M1SVHWQ28FX3CjvxtyS3C+qD0n/nyw/WZDX4lr5OB5HNV4\nDVkT5xLFhyu+iFsgQlmQ9p/QrTTvYHe1m2RxBcCtq+aUNCHGAO0zPl9mwCNL5/S6\nAPNnM08zgZNLZSTUvlp6zZ9aK2Cg+mWh3GU854wcHvSmsrOrH/H5Jlqg6eW0eMU2\n2Ft8NS3CV1muNFxw5MDP+SRxcBviBUldJmtiUK1nKI16KIycJfZPySFk9kIBSc/K\ncUxKeXOBAgMBAAECggEABuRXVY3CNAPHT/L9ZFfTLnZR+d2bB+2IS89+w6Kxiau+\n4V/Pd5RxASTpNTydNnlF4eomRfPCxto42m3Iu9h9g8W1yMUzn8IoA0tUH5P2Qt4q\nkuj3wQPvMDJ1b199cQ0GWObigu3u1SDJx9KyJuMc68ywbOB4viuLynC49FwOIsJz\nLzkFnspXG5LstL8rC6F4MTTj4dwCvQ+z93gHh2doKJ/DWCAxA+RIDeMrqtsOAqSv\nBOFUZRIa0U1gHvMXlkvWAZsNvVhGfECnMMw+aahi1z3yjIZSN0dtMyKCYG/4YYb0\nus8viRivjQHJxOSsl13pJ7Oqx56UF7KZwm0PZfFDXwKBgQD1eEt0RjkmPsLaYhWB\nFsmV5Y7gvHbWno3VlFVZdK85iqX/a6GvziuCUvzHVL+P2QC9IwGx6KgN1uCJmZuC\n8HJmpLp0gMrSrv0xRIaTo8pHxqKOBCXAfRpRmvK8kNYDGRqCpI4cZ/7UHRQS0A20\nMQW5ZnXbUq+CWDxTPdZLukdj+wKBgQC3U0KadDsNtspVaC59VfIqWkfSFKb99kmH\nyqiQFy+xB6nqQ70ql/RWhQweTsbXVkcaw90DsNq6dNkNUQRoCP62ebofxY5UE8QQ\nigNZw4Pn3QqMWh3g4vBlSa1vThxhqiXIFudH7P89mQ2TwNOC+z2tLvwMmyH2xziu\nNlf38eqxswKBgQCRdBCx+5KNuQ7ZPNmlPo2BBx/cx5BbqGQ/NMBGW8AhBqlKasrK\nVA6wEOC8dNl2MY4ghQfSFhzO5o7yulTOCBCiBeZ+dnq40PwzH3nnLl0Enw1fvdFo\n+DiKNpizZ9eIym1NEJks9+qmYfytER+tsIbFz5LyvVJGmGZWpQPAp8b51QKBgQCH\nKWTeublcaBuPkqtMD1Tncv6m3kEs1yvpaTqUWfP4orzdEqpiv/wO2jNQGSazV1I/\nYo8ODJOHi2UIU2ZbSd56LQ9UI3THendA9nB3+xXCmo8PYdXLm6ZAF20+tilovGj0\nuCY3On4JLVH8UNvhI1ma2RxOMwZ8iu+4SirbjMpLzwKBgQDlrgTcFgBJOBqhOOf1\nNao0xH8dHZljd/318Fwf/BCtAJftP6CsRRX5Z/KTEMhIOUiB2NzeiBmjuANeglYe\nRSuI8gmXufwO4Quohr7MN3IFN3hBg5P4Xpp74y96no19NXIAjcZ7D3g3Jk3+yDIp\nfwAwXScY4BBjrKXLNkLmcxbiiw==\n-----END PRIVATE KEY-----\n",
-  "client_email": "circleci@shelves-drf.iam.gserviceaccount.com",
-  "client_id": "112765122271360481064",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/circleci%40shelves-drf.iam.gserviceaccount.com"
-}
+    "type": "service_account",
+    "project_id": "shelves-drf",
+    "private_key_id": "05b2b0f60c55034679ad2311ccc7253ee61f7899",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCvyNPNsioe+7Lb\n6gQEtEiPN/xujETlzbWCvnNih7a1WvexXGQq1PfWvqC35lcV6tBx+vAE/CMhhoV4\nRHZS6irEfkl5sm1j24M1SVHWQ28FX3CjvxtyS3C+qD0n/nyw/WZDX4lr5OB5HNV4\nDVkT5xLFhyu+iFsgQlmQ9p/QrTTvYHe1m2RxBcCtq+aUNCHGAO0zPl9mwCNL5/S6\nAPNnM08zgZNLZSTUvlp6zZ9aK2Cg+mWh3GU854wcHvSmsrOrH/H5Jlqg6eW0eMU2\n2Ft8NS3CV1muNFxw5MDP+SRxcBviBUldJmtiUK1nKI16KIycJfZPySFk9kIBSc/K\ncUxKeXOBAgMBAAECggEABuRXVY3CNAPHT/L9ZFfTLnZR+d2bB+2IS89+w6Kxiau+\n4V/Pd5RxASTpNTydNnlF4eomRfPCxto42m3Iu9h9g8W1yMUzn8IoA0tUH5P2Qt4q\nkuj3wQPvMDJ1b199cQ0GWObigu3u1SDJx9KyJuMc68ywbOB4viuLynC49FwOIsJz\nLzkFnspXG5LstL8rC6F4MTTj4dwCvQ+z93gHh2doKJ/DWCAxA+RIDeMrqtsOAqSv\nBOFUZRIa0U1gHvMXlkvWAZsNvVhGfECnMMw+aahi1z3yjIZSN0dtMyKCYG/4YYb0\nus8viRivjQHJxOSsl13pJ7Oqx56UF7KZwm0PZfFDXwKBgQD1eEt0RjkmPsLaYhWB\nFsmV5Y7gvHbWno3VlFVZdK85iqX/a6GvziuCUvzHVL+P2QC9IwGx6KgN1uCJmZuC\n8HJmpLp0gMrSrv0xRIaTo8pHxqKOBCXAfRpRmvK8kNYDGRqCpI4cZ/7UHRQS0A20\nMQW5ZnXbUq+CWDxTPdZLukdj+wKBgQC3U0KadDsNtspVaC59VfIqWkfSFKb99kmH\nyqiQFy+xB6nqQ70ql/RWhQweTsbXVkcaw90DsNq6dNkNUQRoCP62ebofxY5UE8QQ\nigNZw4Pn3QqMWh3g4vBlSa1vThxhqiXIFudH7P89mQ2TwNOC+z2tLvwMmyH2xziu\nNlf38eqxswKBgQCRdBCx+5KNuQ7ZPNmlPo2BBx/cx5BbqGQ/NMBGW8AhBqlKasrK\nVA6wEOC8dNl2MY4ghQfSFhzO5o7yulTOCBCiBeZ+dnq40PwzH3nnLl0Enw1fvdFo\n+DiKNpizZ9eIym1NEJks9+qmYfytER+tsIbFz5LyvVJGmGZWpQPAp8b51QKBgQCH\nKWTeublcaBuPkqtMD1Tncv6m3kEs1yvpaTqUWfP4orzdEqpiv/wO2jNQGSazV1I/\nYo8ODJOHi2UIU2ZbSd56LQ9UI3THendA9nB3+xXCmo8PYdXLm6ZAF20+tilovGj0\nuCY3On4JLVH8UNvhI1ma2RxOMwZ8iu+4SirbjMpLzwKBgQDlrgTcFgBJOBqhOOf1\nNao0xH8dHZljd/318Fwf/BCtAJftP6CsRRX5Z/KTEMhIOUiB2NzeiBmjuANeglYe\nRSuI8gmXufwO4Quohr7MN3IFN3hBg5P4Xpp74y96no19NXIAjcZ7D3g3Jk3+yDIp\nfwAwXScY4BBjrKXLNkLmcxbiiw==\n-----END PRIVATE KEY-----\n",
+    "client_email": "circleci@shelves-drf.iam.gserviceaccount.com",
+    "client_id": "112765122271360481064",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/circleci%40shelves-drf.iam.gserviceaccount.com"
+  }
