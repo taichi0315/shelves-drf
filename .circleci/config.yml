@@ -4,20 +4,6 @@ jobs:
     docker:
       - image: circleci/python:3.6.1
 
-    working_directory: ~/repo
-
     steps:
       - checkout
-
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "Pipfile" }}
-            - v1-dependencies-
-
-      - run:
-          name: install dependencies
-          command: |
-            pipenv install
-
-      - save_cache:
-          key: v1-dependencies-{{ checksum "Pipfile" }}
+      - run: echo "A first hello"
