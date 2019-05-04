@@ -2,8 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.6.1
-
+      - image: google/cloud-sdk
     steps:
       - checkout
-      - run: echo "A first hello"
+      - setup_remote_docker:
+          version: 18.06.0-ce
+      - run:
+        name: Setup CLOUD SDK
+        command: |
+          echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
