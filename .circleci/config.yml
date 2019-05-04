@@ -14,3 +14,7 @@ jobs:
             gcloud --quiet config set project shelves-drf
             gcloud --quiet config set compute/zone asia-east1-b
             gcloud --quiet auth configure-docker
+      - run:
+          name: Push docker image
+          command: |
+            docker image build -t shelves-web-server .
