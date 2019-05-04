@@ -18,4 +18,9 @@ jobs:
           name: Push docker image
           command: |
             docker image build -t shelves-web-server .
-            docker container run --rm -p 8000:8000 -it shelves-web-server
+            TAG=gcr.io/shelves-drf/shelves-web-server:pushed-'date +%Y%m%d%H%M%S'
+            docker tag shelves-web-server $TAG
+            docker push $TAG
+            LATEST_TAG=gcr.io/shelves-drf/shelves-web-server:latest
+            docker tag shelves-web-server $LATEST_TAG
+            docker push $LATEST_TAG
