@@ -12,3 +12,4 @@ jobs:
           command: |
             echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
             gcloud --quiet config set project shelves-drf
+            gcloud --quiet config set compute/zone asia-east1-b
