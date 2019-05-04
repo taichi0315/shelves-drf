@@ -8,6 +8,6 @@ jobs:
       - setup_remote_docker:
           version: 18.06.0-ce
       - run:
-        name: Setup CLOUD SDK
-        command: |
-          echo $GCLOUD_SERVICE_KEY
+          name: Setup CLOUD SDK
+          command: |
+            echo $GCLOUD_SERVICE_KEY
