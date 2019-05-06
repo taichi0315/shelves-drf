@@ -10,4 +10,4 @@ ADD . /code
 WORKDIR /code/backend
 RUN pipenv run python manage.py makemigrations
 RUN pipenv run python manage.py migrate
-CMD ["pipenv","run","python","manage.py","runserver","0.0.0.0:8000"]
+CMD ["pipenv","run","python","manage.py","runserver","0.0.0.0:8080"]
