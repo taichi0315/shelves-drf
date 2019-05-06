@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Push docker image
           command: |
-            docker image build -t shelves-web-server .
+            docker image build --no-cache=true -t shelves-web-server .
             LATEST_TAG=gcr.io/shelves-drf/shelves-web-server:latest
             docker tag shelves-web-server $LATEST_TAG
             docker push $LATEST_TAG
