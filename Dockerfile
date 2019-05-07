@@ -10,5 +10,5 @@ ADD . /code
 WORKDIR /code/src
 RUN pipenv run python manage.py makemigrations
 RUN pipenv run python manage.py migrate
-RUN pipenv run python manage.py init_dataset toby
+RUN pipenv run python manage.py init_datasets toby
 CMD ["pipenv","run","python","manage.py","runserver","0.0.0.0:8080"]
