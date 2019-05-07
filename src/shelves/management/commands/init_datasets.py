@@ -14,7 +14,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         if options['dataset'] == 'toby':
             for user in toby:
-                u = AppUser(username=user, email=f'{user}@example.com')
+                u = AppUser(username=user, email=f'{user}@example.com', displayname=user[0].upper()+user[1:])
                 u.set_password('testuser')
                 u.save()
                 for post in toby[user]:
