@@ -21,5 +21,5 @@ Webサービスの公開URLは[こちら](http://shelves.yaga.tokyo/)
 ## テストユーザー
 以下のユーザーネームとパスワードでテストユーザーとしてログインすることができます。
 
-username: toby
+username: toby  
 passward: testuser
