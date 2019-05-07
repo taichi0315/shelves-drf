@@ -1,0 +1,55 @@
+{% extends "shelves/base.html" %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div id=app>
+    <form class="border border-light rounded p-4">
+        <div class="form-group">
+            <label>キーワード（タイトル、著者など）：</label>
+            <input type="text" class="form-control" v-model="name"><br>
+            <input type="button" v-on:click="getUrl()" name="" value="検索" class="btn btn-primary float-right"><br>
+        </div>
+    </form>
+    <div>
+        {% if not user.is_authenticated %}
+        投稿には<a href="{% url 'shelves:login' %}">ログイン</a>が必要です
+        {% endif %}
+    </div>
+    <div v-for="book in books">
+        <div class="border border-light rounded p-5" v-if="book.volumeInfo.industryIdentifiers !== $0">
+            <div class="p-2 h5">[[ book.volumeInfo.title ]]</div>
+            <div class="row align-items-center">
+                <div class="col-sm-2 text-center" v-if="book.volumeInfo.imageLinks !== $0"><img :src="book.volumeInfo.imageLinks.thumbnail"></div>
+                <div class="col-sm-2 text-center" v-else>No Image</div>
+                <div class="col-sm-8 text-wrap"><br>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-light">
+                            <div>著者：</div>
+                            <ul class="list-group-horizontal">
+                                <li v-for="author in book.volumeInfo.authors" class="list-group-item border-light">[[ author ]]</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item border-light">出版社：[[ book.volumeInfo.publisher ]]</li>
+                        <li class="list-group-item border-light">出版日：[[ book.volumeInfo.publishedDate ]]</li>
+                    </ul>
+                </div>
+            </div>
+            {% if user.is_authenticated %}
+            <form method="post">
+                {% csrf_token %}
+                {{ form }}
+                <button class="btn btn-primary float-right" type="submit">記事を書く</button>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'shelves/js/book_search.js' %}"></script>
+{% endblock %}

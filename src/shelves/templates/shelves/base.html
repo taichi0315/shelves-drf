@@ -1,0 +1,51 @@
+{% load i18n static %}
+<!DOCTYPE html>{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="{% static 'shelves/css/bootstrap.min.css' %}">
+{% block extra_css %}{% endblock %}
+<title>{% block title %}Shelves{% endblock %}</title>
+</head>
+<body>
+  <div class="container">
+    <div class="text-center h1 p-4">
+      Shelves
+    </div>
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'shelves:index' %}">タイムライン</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'shelves:book_search' %}">投稿</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'shelves:recommend_user' %}">おすすめユーザー</a>
+      </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">アカウント</a>
+            <div class="dropdown-menu">
+              {% if user.is_authenticated %}
+                <a class="dropdown-item" href="{% url 'shelves:profile' user.username %}">プロフィール</a>
+                <a class="dropdown-item" href="{% url 'shelves:profile_update' user.username %}">プロフィールの編集</a>
+                <a class="dropdown-item" href="{% url 'shelves:logout' %}">ログアウト</a>
+              {% else %}
+                <a class="dropdown-item" href="{% url 'shelves:login' %}">ログイン</a>
+                <a class="dropdown-item" href="{% url 'shelves:signup' %}">サインアップ</a>
+              {% endif %}
+            </div>
+          </li>
+    </ul>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+<script src="{% static 'shelves/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'shelves/js/bootstrap.bundle.min.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+{% block extra_js %}
+{% endblock %}
+</body>
+</html>
