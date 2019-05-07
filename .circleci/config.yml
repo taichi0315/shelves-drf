@@ -11,16 +11,16 @@ jobs:
           name: Setup CLOUD SDK
           command: |
             echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
-            gcloud --quiet config set project shelves-drf-project
+            gcloud --quiet config set project shelves-deploy-project
             gcloud --quiet config set compute/zone asia-east1-b
             gcloud --quiet auth configure-docker
       - run:
           name: Push docker image
           command: |
             docker image build --no-cache=true -t shelves-web-server .
-            TAG=gcr.io/shelves-drf-project/shelves-web-server:pushed-`date "+%Y%m%d%H%M%S"`
+            TAG=gcr.io/shelves-deploy-project/shelves-web-server:pushed-`date "+%Y%m%d%H%M%S"`
             docker tag shelves-web-server $TAG
             docker push $TAG
-            LATEST_TAG=gcr.io/shelves-drf-project/shelves-web-server:latest
+            LATEST_TAG=gcr.io/shelves-deploy-project/shelves-web-server:latest
             docker tag shelves-web-server $LATEST_TAG
             docker push $LATEST_TAG
