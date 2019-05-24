@@ -10,6 +10,7 @@ Webサービスの公開URLは[こちら](http://shelves.yaga.tokyo/)
 - Docker
 - CircleCI
 - Spinnaker
+- GCR
 - GKE
 
 ## 実装した主な機能
@@ -17,7 +18,7 @@ Webサービスの公開URLは[こちら](http://shelves.yaga.tokyo/)
 - 投稿のCRUD(djangoのdefaultパッケージであるgenericを使用)
 - GoogleBooksAPIを用いた書籍情報の取得（axiosでAPIから情報を取得）
 - おすすめユーザー推薦機能（ピアソン相関係数を用いた簡単なユーザー推薦）
-- CircleCI、Spinnaker、GCPを用いた自動デプロイ
+- CircleCI、Spinnaker、GCR、GKEを用いた自動デプロイ
 
 ## テストユーザー
 以下のユーザーネームとパスワードでテストユーザーとしてログインすることができます。
