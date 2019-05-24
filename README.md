@@ -10,7 +10,7 @@ Webサービスの公開URLは[こちら](http://shelves.yaga.tokyo/)
 - Docker
 - CircleCI
 - Spinnaker
-- GCP
+- GKE
 
 ## 実装した主な機能
 - ユーザーのCRUD(djangoのdefaultパッケージであるAbstractBaseUserを使用)
